@@ -1,0 +1,476 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[russian]{babel}
+
+
+\title{Специальные разделы высшей математики}
+\author{Васильков Дмитрий М3115}
+\date{Март 2023}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+    Задание № 1
+\end{center}
+
+\begin{center}
+    Найти кривую, проходящую через точку (2, 3) и обладающую тем свойством, что отрезок произвольной ее касательной, концы которого лежат на осях координат, делится точкой касания пополам.
+\end{center}
+
+\begin{center}
+    Решение:
+\end{center}
+
+\text{Изобразим на рисунке эскиз графика функции.}
+
+\begin{center}
+    \includegraphics{T.jpg}
+\end{center}
+\text{Отметим точки A и B ее пересечения с осями координат. Так как по условию задания точка касания делит отрезок АB пополам, то мы можожем сказать, что абсцисса $x_A$  точки А по абсолютной величине вдвое больше абсолютной величины абсциссы $x_0$. Чтобы составить дифференциальное уравнение кривой, нам нужно определить $x_A$. Для этого запишем уравнение касательной.}\\\\
+
+$y = \acute{y}(x_0)(x - x_0) + y_0$
+
+\begin{center}
+    \text{Пусть y = 0:}
+\end{center}
+
+$0 = \acute{y}(x_0)(x - x_0) + y_0$\\\\
+
+\begin{center}
+    \text{Выразим из этого выражения x:}
+\end{center}
+
+
+$x = x_0 - \frac{y_0}{\acute{y}(x_0)}$\\\\
+
+\begin{center}
+    \text{Поскольку, в соответсвии с условием, значение x в точке А должно быть в два раза больше.}
+\end{center}
+
+
+$x_0 - \frac{y_0}{\acute{y}(x_0)} = 2x_0$\\\\
+
+$\acute{y}(x_0) = -x_0 * y_0$\\\\
+
+$\acute{y} = -xy$
+
+\begin{center}
+    \text{Решим полученное уравнение:}
+\end{center}
+
+\begin{flushleft}
+    $\frac{\text{d}y}{\text{d}x} = -xy$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $\text{d}y = -xy\text{d}x$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $\frac{\text{d}y}y = -xdx$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $\int{\frac{\text{d}y}y} = \int-xdx$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $\ln\mid y\mid\ = -\frac{x^{2}}{2}+C$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $|y| = e^{-\frac{x^2}{2} + C}$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $y = e^{-\frac{x^2}{2} + C}$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $y = \frac{C}{e^{\frac{x^2}{2}}}$\\\\
+\end{flushleft}
+
+\begin{center}
+    \text{Подставим координаты точки из условия (2, 3):}
+\end{center}
+
+\begin{flushleft}
+    $3 = \frac{C}{e^{\frac{2^2}{2}}}$\\\\
+\end{flushleft}
+
+\begin{center}
+    \text{Остюда, получим C:}
+\end{center}
+
+\begin{flushleft}
+    $C = 3e^2$
+\end{flushleft}
+
+\begin{center}
+    \text{Тогда, формула кривой равна:}
+\end{center}
+
+\begin{flushleft}
+    $y = \frac{3e^2}{e^{\frac{x^2}{2}}}$
+\end{flushleft}
+
+\begin{center}
+    Ответ: $y = \frac{3e^2}{e^{\frac{x^2}{2}}}$
+\end{center}
+
+\begin{center}
+    \text{Задание № 2}
+\end{center}
+
+\begin{center}
+    $\frac{dy}{dx} = sin(x-y)$
+\end{center}
+
+\begin{center}
+    Решение:
+\end{center}
+
+\begin{flushleft}
+    $\frac{dy}{dx} = sin(x-y)$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $\frac{dy}{dx} = -sin(y - x)$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $dy = -sin(y - x)dx$\\\\
+\end{flushleft}
+
+\begin{center}
+    \text{Применим подстановку $u = y - x$, получим:}
+\end{center}
+
+\begin{flushleft}
+    $du = dy - dx$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $y = x + u$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $dy = dx + du$\\\\
+\end{flushleft}
+
+\begin{center}
+    \text{Отсюда:}
+\end{center}
+
+\begin{flushleft}
+    $dx + du = -sin(u)dx$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $du = (-sin(u) - 1)dx$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+    $-\frac{du}{sin(u) + 1} = dx$
+\end{flushleft}
+
+\begin{flushleft}
+    $\int-\frac{1}{sin(u)+1}du = \int1dx$
+\end{flushleft}
+
+\begin{flushleft}
+    $tan({\frac{u}{2} - \frac{\pi}{4}}) = -x + C$
+\end{flushleft}
+
+\begin{center}
+    Ответ: $tan({\frac{u}{2} - \frac{\pi}{4}}) = -x + C$
+\end{center}
+
+\begin{center}
+    $e^{y'} = x$
+\end{center}
+
+\begin{center}
+    Решение:
+\end{center}
+
+\begin{flushleft}
+    $e^{y'} = x$\\\\
+\end{flushleft}
+
+
+\begin{flushleft}
+    $y' = lnx$
+\end{flushleft}
+
+\begin{flushleft}
+    $\frac{dy}{du} = lnx$
+\end{flushleft}
+
+\begin{flushleft}
+    $dy = ln(x)dx$
+\end{flushleft}
+
+\begin{flushleft}
+   $\int1dy = \int ln(x)dx$
+\end{flushleft}
+
+\begin{flushleft}
+   $y = xlnx - x + C$\\\\
+\end{flushleft}
+
+\begin{center}
+    Ответ: $y = xlnx - x + C$\\\\
+\end{center}
+
+\begin{center}
+    \text{(3) Найти частное решение в уравнении $x^2y'cosy + 1 = 0$, удовлетворяющее условию $\lim_{x\to\infty}{y} = \frac{16\pi}{3}$}
+\end{center}
+
+\begin{center}
+    Решение:
+\end{center}
+
+\begin{flushleft}
+    $y'cosy = -\frac{1}{x^2}$\\\\
+\end{flushleft}
+
+
+\begin{flushleft}
+    $\frac{dy}{dx}cosy = -\frac{1}{x^2}$
+\end{flushleft}
+
+\begin{flushleft}
+    $\int cosydy = \int\frac{dx}{x^2}$
+\end{flushleft}
+
+\begin{flushleft}
+    $siny = \frac{1}{x} + C$
+\end{flushleft}
+
+\begin{flushleft}
+   $y = arcsin(\frac{1}{x} + C)$
+\end{flushleft}
+
+\begin{flushleft}
+   $\frac{16\pi}{3} = arcsin(C)$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+   $c = sin(\frac{16\pi}{3}) - \frac{\sqrt{3}}{2}$
+\end{flushleft}
+
+\begin{flushleft}
+   $y = arcsin(\frac{1}{x} - \frac{\sqrt{3}}{2})$\\\\
+\end{flushleft}
+
+\begin{center}
+    Ответ: $y = arcsin(\frac{1}{x} - \frac{\sqrt{3}}{2})$\\\\
+\end{center}
+
+\begin{center}
+    Задание № 3
+\end{center}
+
+\begin{center}
+    $x(y-x)dy = y^{2}dx$\\\\
+\end{center}
+
+\begin{center}
+    Пусть $x(y-x)$ = P(x, y), $y^2$ = Q(x, y),\\\\
+\end{center}
+
+\begin{center}
+    Тогда:\\\\
+\end{center}
+
+\begin{flushleft}
+    $P(\lambda x, \lambda y) = \lambda x (\lambda y - \lambda x) = \lambda^2 (xy - x^2) = \lambda^2 P(x, y)$
+\end{flushleft}
+
+\begin{flushleft}
+    $Q(\lambda x, \lambda y) = (\lambda y)^2 = \lambda^2y^2 = \lambda^2 Q(x, y)$
+\end{flushleft}
+
+\begin{center}
+    \text{Следовательно, уравнение однородное}\\\\
+\end{center}
+
+\begin{flushleft}
+   $x(y - x)dy = y^2dx$
+\end{flushleft}
+
+\begin{flushleft}
+   $x(y-x)y' = y^2$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+   $(xy - x^2)y' = y^2$
+\end{flushleft}
+
+\begin{flushleft}
+   $y' = \frac{y^2}{xy - x^2}$\\\\
+\end{flushleft}
+
+\begin{center}
+    Сделаем замену: $y = ux$, $u = \frac{y}{x}$, $y' = u'x + u$:
+\end{center}
+
+\begin{flushleft}
+    $u'x + u = \frac{u^2}{u - 1}$
+\end{flushleft}
+
+\begin{flushleft}
+    $\frac{du}{dx}x + u = \frac{u^2}{u - 1}$
+\end{flushleft}
+
+\begin{flushleft}
+   $\frac{(u - 1)du}{u} = \frac{dx}{x}$
+\end{flushleft}
+
+\begin{flushleft}
+   $\int\frac{u-1}{u}du = \int\frac{1}{x}dx$\\\\
+\end{flushleft}
+
+\begin{flushleft}
+   $u - ln|u| = ln|x| + C$
+\end{flushleft}
+
+\begin{flushleft}
+   $\frac{y}{x} - ln(\frac{y}{x}) = lnx + C$\\\\
+\end{flushleft}
+
+\begin{center}
+    \text{Ответ: $\frac{y}{x} - ln(\frac{y}{x}) = lnx + C$}
+\end{center}
+
+\begin{center}
+    $2x^2y' = x^2 + y^2$
+\end{center}
+
+\begin{flushleft}
+   $y' = \frac{x^2 + y^2}{2x^2}$
+\end{flushleft}
+
+\begin{flushleft}
+   $y' = \frac{1}{2} + \frac{y^2}{2x^2}$\\\\
+\end{flushleft}
+
+\begin{center}
+    \text{Сделаем замену: $y = ux$, $u = \frac{y}{x}$, $y' = u'x + u$:}
+\end{center}
+
+\begin{flushleft}
+   $u'x + u = \frac{1}{2} + \frac{1}{2}u^2$
+\end{flushleft}
+
+\begin{flushleft}
+    $u'x = \frac{u^2 - 2u + 1}{2}$
+\end{flushleft}
+
+\begin{flushleft}
+  $u' = \frac{u^2 - 2u + 1}{2x}$
+\end{flushleft}
+
+\begin{flushleft}
+   $\frac{du}{(u^2 - 2u + 1)dx} = \frac{1}{2x}$
+\end{flushleft}
+
+\begin{flushleft}
+   $\frac{du}{u^2 - 2u + 1} = \frac{dx}{2x}$
+\end{flushleft}
+
+\begin{flushleft}
+   $\int\frac{du}{u^2 - 2u + 1} = \int\frac{dx}{2x}$
+\end{flushleft}
+
+\begin{flushleft}
+ $\int\frac{du}{(u- 1)^2} = \frac{1}{2} \int\frac{dx}{x}$
+\end{flushleft}
+
+\begin{flushleft}
+   $\frac{du}{t^2} = \frac{ln|x|}{2} + C$
+\end{flushleft}
+
+\begin{flushleft}
+    $-\frac{1}{t} = \frac{ln|x|}{2} + C$
+\end{flushleft}
+
+\begin{flushleft}
+   $-\frac{1}{u - 1} = \frac{ln|x|}{2} + C$
+\end{flushleft}
+
+\begin{flushleft}
+   $-\frac{1}{\frac{y}{x} - 1} = \frac{lnx}{2} + C$
+\end{flushleft}
+
+\begin{center}
+    \text{Ответ: $-\frac{1}{\frac{y}{x} - 1} = \frac{lnx}{2} + C$}\\\\
+\end{center}
+
+\begin{center}
+    \text{(3) $xy' = y(lny - lnx)$}
+\end{center}
+
+\begin{flushleft}
+    $y' = \frac{y(lny - lnx)}{x}$
+\end{flushleft}
+
+\begin{center}
+    \text{Сделаем замену: $y = ux$, $u = \frac{y}{x}$, $y' = u'x + u$:}
+\end{center}
+
+\begin{flushleft}
+   $y' = \frac{y}{ln(\frac{y}{x})}$
+\end{flushleft}
+
+\begin{flushleft}
+ $u'x + u = \frac{u}{\frac{1}{u}}$
+\end{flushleft}
+
+\begin{flushleft}
+   $u'x = u^2 + u$
+\end{flushleft}
+
+\begin{flushleft}
+    $u' = \frac{u^2 + u}{x}$
+\end{flushleft}
+
+\begin{flushleft}
+   $\frac{du}{dx} = \frac{u^2 + u}{x}$
+\end{flushleft}
+
+\begin{flushleft}
+   $\frac{du}{u^2 + u} = \frac{dx}{x}$
+\end{flushleft}
+
+\begin{flushleft}
+   $\int\frac{du}{u^2 + u} = \frac{dx}{x}$
+\end{flushleft}
+
+\begin{flushleft}
+ $\int\frac{1}{u} - \frac{1}{u+1}du = ln|x| + C$
+\end{flushleft}
+
+\begin{flushleft}
+   $\int\frac{1}{u}du - \int\frac{1}{u + 1}du = ln|x| + C$
+\end{flushleft}
+
+\begin{flushleft}
+    $ln|u| - ln|u + 1| = ln|x| + C$
+\end{flushleft}
+
+\begin{flushleft}
+   $ln(\frac{y}{x}) - ln(\frac{y}{x} + 1) = lnx + C$
+\end{flushleft}
+
+\begin{flushleft}
+  $ln(\frac{y}{y + x}) = lnx + C$
+\end{flushleft}
+
+\begin{center}
+    \text{Ответ: $ln(\frac{y}{y + x}) = lnx + C$}
+\end{center}
+
+\end{document}
