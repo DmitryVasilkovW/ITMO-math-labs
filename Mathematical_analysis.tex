@@ -1,0 +1,122 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[russian]{babel}
+
+\title{Математический анализ}
+\author{Васильков Дмитрий М3115}
+\date{Март 2023}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+    \text{Ответы:}
+\end{center}
+
+\begin{center}
+    \text{№ 2187}\\\\
+    \text{Ответ: 1}
+\end{center}
+
+\begin{center}
+    \text{№ 2189}\\\\
+    \text{Ответ: $\frac{1}{a} - \frac{1}{b}$}
+\end{center}
+
+\begin{center}
+    \text{№ 2190}\\\\
+    \text{Ответ: $\frac{b^{m+1}}{m+1} - \frac{a^{m+1}}{m+1}$}
+\end{center}
+
+\begin{center}
+    \text{Решения:}\\\\
+\end{center}
+
+\begin{center}
+    \text{№ 2187}
+\end{center}
+
+\begin{center}
+    \text{Задание:  $\int_{0}^{\frac{\pi}{2}}\sin(x)dx$\\\\}
+\end{center}
+
+\begin{center}
+    \text{Решение:}
+\end{center}
+
+\begin{left}
+$\lim\limits_{n\to \infty} \sum_\text{i=1}^n\sin(\xi_i)\Delta x_i$\\\\
+\end{left}
+
+$\Delta x_i = \frac{\pi i}{2n},\xi_i = \frac{\pi}{2n}$\\\\
+
+$\lim\limits_{n\to \infty} \sum_\text{i=1}^n\sin(\frac{\pi i}{2n} )\frac{\pi}{2n}$\\\\
+
+$\sum_\text{i=1}^n\sin(\frac{\pi i}{2n}) = \frac{\ctg(\frac{\pi}{4}) + 1}{2}$\\\\
+
+\begin{center}
+    \text{Получаем:}
+\end{center}
+
+\begin{left}
+    $\lim\limits_{n\to \infty}(\frac{\ctg(\frac{\pi}{4n}) + 1}{2}) * \frac{\pi}{2n} = \lim\limits_{n\to \infty}(\frac{\frac{\cos(\frac{\pi}{4n})}{\sin(\frac{\pi}{4n}) + 1}}{2} * \frac{\pi}{2n}) = \lim\limits_{n\to \infty}((1 + \frac{\cos(\frac{\pi}{4n})}{\sin(\frac{\pi}{4n})}) * \frac{\pi}{2n}) = $\\\\\\\
+\end{left}
+
+\begin{left}
+    $\lim\limits_{n\to \infty}(\frac{\pi}{4n} + \frac{\cos(\frac{\pi}{4n}) * \frac{\pi}{4n}}{\sin(\frac{\pi}{4n})}) = \lim\limits_{n\to \infty}(\cos(\frac{\pi}{4n})) = 1$\\\\
+\end{left}
+
+\begin{center}
+    \text{№ 2189}
+\end{center}
+
+\begin{center}
+    \text{Задание:  $\int_{a}^{b}\frac{dx}{x^{2}}$ (0 < a < b)\\\\}
+\end{center}
+
+\begin{center}
+    \text{Решение:}
+\end{center}
+
+\begin{left}
+    $\lim\limits_{n\to \infty}\sum_\text{i=1}^n f(\xi_i)\Delta x_i$\\\\
+\end{left}
+
+
+$\sum_\text{i=1}^n f(\xi_i)\Delta x_i = \frac{b - a}{n}(\frac{1}{\sqrt{a(a + \frac{b - a}{n})}} + \frac{1}{{\sqrt{a + 2\frac{b - a}{n}}}^{2}} + ... +$\\\\
+
+$\frac{1}{\sqrt{b}}) = \frac{b-a}{n}(\frac{1}{a(a + \frac{b-a}{n})}+ \frac{1}{(a + \frac{b - a}{n})(a+2\frac{b-a}{n})} + ... + \frac{1}{(a + \frac{b(n-1)(b-a)}{n})}) = k\sum_\text{i=0}^n\frac{1}{a^{2}+(2i+1)ak+(i^{2}+i)k^{2}}=$\\\\
+
+$\frac{1}{(a+\frac{(b-a)i}{n})(a+\frac{(i+1)(b-a)}{n})} = -\frac{n(n+1)}{a(a-b(n+1))}$\\\\
+
+\begin{center}
+    \text{Получаем:}
+\end{center}
+
+\begin{left}
+    $\lim\limits_{n\to \infty}\frac{(a-b)(n+1)}{a(a-b)(n+1)} = \frac{1}{a} - \frac{1}{b}$\\\\
+\end{left}
+
+\begin{center}
+    \text{№ 2190}
+\end{center}
+
+\begin{center}
+    \text{Задание:  $\int_{a}^{b}x^{m}dx$ (0 < a < b; m \neq -1)\\\\}
+\end{center}
+
+\begin{center}
+    \text{Решение:}
+\end{center}
+
+\begin{left}
+    $b = ad^{n}, d = (\frac{b}{a})^{\frac{1}{n}}$\\\\
+\end{left}
+
+$\Delta x_i = ad^{i} - ad^{i - 1}, f(\xi_i) = (ad)^{m}$\\\\
+
+$\sum_\text{i=0}^n a^{m+1}(d - 1)d^{im+i-1}=(d-1)a^{m+1}(\frac{d^{m}(d^{(m+1)n}-1)}{d^{m+1}-a}) = a^{m+1}((\frac{b}{a})^{\frac{1}{n}}-1)$\\\\
+
+$\frac{(\frac{b}{a})^{\frac{m}{n}}((\frac{b}{a})^{m+1}-1)}{(\frac{b}{a}^{\frac{m+1}{n}}-1)}=a^{m+1}(\frac{1}{n}*\ln|\frac{b}{a}|*\frac{(\frac{b}{a})^{\frac{m}{n}} - 1}{\frac{1}{n}*\ln|\frac{b}{a}|^{m+1}}) = \frac{b^{m+1}}{m+1} - \frac{a^{m+1}}{m+1}$
+
+\end{document}
