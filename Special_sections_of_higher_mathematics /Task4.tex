@@ -1,0 +1,302 @@
+\documentclass{article}
+\usepackage[russian]{babel}
+\usepackage{graphicx} % Required for inserting images
+
+\title{СРВМ ДЗ 3}
+\author{Dmitry Vasilkov}
+\date{May 2023}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    \text{
+Задание 329
+}
+\end{center}
+
+\begin{center}
+    \text{
+$y''(x + 2)^5 = 1$
+}
+\end{center}
+
+\begin{center}
+    \text{
+$u = x + 2$
+}
+\end{center}
+
+\begin{center}
+\text{$x = u - 2$}
+\end{center}
+
+\begin{center}
+\text{
+$u^5y'' = 1$
+}
+\end{center}
+
+\begin{center}
+\text{
+$y'' = \frac{1}{u^5}$
+}
+\end{center}
+
+\begin{center}
+\text{
+$y'' = \frac{d(y')}{du}$
+}
+\end{center}
+
+\begin{center}
+\text{
+$\frac{d(y')}{du} = \frac{1}{u^5}$
+}
+\end{center}
+
+\begin{center}
+\text{
+$\int d(y') = \int \frac{1}{u^5}du$
+}
+\end{center}
+
+\begin{center}
+\text{
+$y' = C_1 - \frac{1}{4u^4}$
+}
+\end{center}
+
+\begin{center}
+\text{
+$y'(u) = \frac{dy}{du}$
+}
+\end{center}
+
+\begin{center}
+\text{
+$\frac{dy}{du} = C_1 - \frac{1}{4u^4}$
+}
+\end{center}
+
+\begin{center}
+\text{
+$dy = (C_1 - \frac{1}{4u^4})du$
+}
+\end{center}
+
+\begin{center}
+\text{
+$M(y)dy = N(u)du$
+}
+\end{center}
+
+\begin{center}
+\text{
+$\int 1dy = \int C_1 - \frac{1}{4u^4}du$
+}
+\end{center}
+\begin{center}
+\text{
+$y = \frac{12C_1u^4 + 1}{12u^3} + C_2$
+}
+\end{center}
+
+\begin{center}
+\text{
+$u = x + 2$
+}
+\end{center}
+
+\begin{center}
+\text{
+$y = \frac{1}{12(x + 2)^3} + C_1x + C_2 + 2C_1$
+}
+\end{center}
+
+\begin{center}
+\text{
+$y = \frac{1}{12(x + 2)^3} + C_1x + C_2$\\\\
+}\\\\
+\end{center}
+
+\begin{center}
+\\\\
+\text{
+Задание 340
+}
+\end{center}
+
+$$xy''' - y'' = 0$$
+
+$$xy''' + y'' = (xy'')'$$
+
+$$d(xy'' - 2y') = 0$$
+
+$$xy'' - 2y' = C$$
+
+$$xy'' - 2y' - C = 0$$
+
+$$a = (ax)'$$
+
+$$xy'' + y' = (xy')'$$
+
+$$d(xy' - 3y - Cx) = 0$$
+
+$$xy' - 3y - Cx = C_1$$
+
+$$y' - \frac{3y}{x} - C = \frac{C_1}{x}$$
+
+$$y' - \frac{3y}{x} = \frac{C_1}{x} + C$$
+
+$$y' + a(x)y = b(x)$$
+
+$$a = -\frac{3}{x}$$ 
+
+$$b = \frac{C_1}{x} + C$$
+
+$$y = uv$$
+
+$$y' = uv' + u'v$$
+
+$$uv' + u'v - \frac{3uv}{x} = \frac{C_1}{x} + C$$
+
+$$u'v + u(v' - \frac{3v}{x}) = \frac{C_1}{x} + C$$
+
+$$v' - \frac{3v}{x} = 0$$
+
+$$v' = \frac{3v}{x}$$
+
+$$v'(x) = \frac{dv}{dx}$$
+
+$$\frac{dv}{dx} = \frac{3v}{x}$$
+
+$$dv = \frac{3vdx}{x}$$
+
+$$\frac{dv}{v} = \frac{3dx}{x}$$
+
+$$M(v)dv = N(x)dx$$
+
+$$\int \frac{1}{v}dv = \int \frac{3}{x}dx$$
+
+$$ln(v) = 3ln(x)$$
+
+$$e^{f_1} = e^{f_2}$$
+
+$$v = x^3$$
+
+$$u'v + u(v' - \frac{3v}{x}) = \frac{C_1}{x} + C$$
+
+$$v = x^3$$
+
+$$(v' - \frac{3v}{x}) = 0$$
+
+$$u'x^3 = \frac{C_1}{x} + C$$
+
+$$u' = \frac{Cx + C_1}{x^4}$$
+
+$$u'(x) = \frac{du}{dx}$$
+
+$$\frac{du}{dx} = \frac{Cx + C_1}{x^4}$$
+
+$$du = \frac{(Cx + C_1)dx}{x^4}$$
+
+$$M(u)du = N(x)dx$$
+
+$$\int 1 du = \int \frac{Cx + C_1}{x^4}dx$$
+
+$$u = C_2 - \frac{3Cx + 2C_1}{6x^3}$$
+
+$$u = -\frac{C}{2x^2} - \frac{C_1}{3x^3} + C_2$$
+
+$$u = \frac{y}{v}$$
+
+$$v = x^3$$
+
+$$y = \frac{6C_2x^3 - 3Cx - 2C_1}{6}$$
+
+$$y = C_2x^3 + Cx + C_1$$
+
+\begin{center}
+\text{
+Задание 345
+}
+\end{center}
+$$y'' = \sqrt{
+y' + 1
+}$$
+
+$$F(y, y', ..., y^{(n)}) = 0$$
+
+$$y' = u(y)$$
+
+$$y' = u$$
+
+$$y'' = uu'$$
+
+$$uu' = \sqrt{
+u  + 1
+}$$
+
+$$u'(y) = \frac{du}{dy}$$
+
+$$\frac{udu}{dy} = \sqrt{
+u + 1
+}$$
+
+$$udu = \sqrt{
+u + 1
+}dy$$
+
+$$\frac{udu}{\sqrt{u + 1}} = dy$$
+
+$$M(u)du = N(y)dy$$
+
+$$\int \frac{u}{\sqrt{u + 1}}du = \int 1dy$$
+
+$$\frac{2u\sqrt{u + 1}}{3} - \frac{4\sqrt{u + 1}}{3} = y + C$$
+
+$$\frac{2u\sqrt{u + 1}}{3} - \frac{4\sqrt{u + 1}}{3} = y + C, u = -1$$
+
+$$u = y'$$
+
+$$\frac{2y'\sqrt{y' + 1}}{3} - \frac{4\sqrt{y' + 1}}{3} = y + C$$
+
+$$2y'\sqrt{y' + 1} - 4\sqrt{y' + 1} = 3y + 3C$$
+
+$$F(x, y, y') = 0$$
+
+$$y = f(x, y')$$
+
+$$p = y'$$
+
+$$p = y' = \frac{dy}{dx}$$
+
+$$dy = pdx$$
+
+$$y = \frac{2p\sqrt{p + 1}}{3} - \frac{4\sqrt{p + 1}}{3} - C$$
+
+$$dy = \frac{pdp}{\sqrt{p + 1}}$$
+
+$$dy = pdx$$
+
+$$pdx = \frac{pdp}{\sqrt{p + 1}}$$
+
+$$dx = \frac{dp}{\sqrt{p + 1}}$$
+
+$$M(x)dx = N(p)dp$$
+
+$$\int 1 dx = \int \frac{1}{\sqrt{p + 1}}dp$$
+
+$$x = 2 \sqrt{p + 1} + C_1$$
+
+$$p = \frac{x^2 - 2C_1x + C_1^2-4}{4}$$
+
+$$y = \frac{2p\sqrt{p + 1}}{3} - \frac{4\sqrt{p + 1}}{3} - C$$
+
+$$y = \frac{(x^2 - 2C_1x + C_1^2 - 12) \sqrt{x^2 - 2C_1x + C_1^2} - 12C}{12}$$
+
+$$y = \frac{x^3}{12} - \frac{C_1x^2}{4} + \frac{C_1^2x}{4} - x + C$$
+
+\end{document}
