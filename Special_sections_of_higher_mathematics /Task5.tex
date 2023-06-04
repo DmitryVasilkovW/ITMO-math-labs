@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+
+
+\title{СРВМ ДЗ}
+\author{Васильков Дмитрий}
+\date{4 Июня, 2023}
+
+\begin{document}
+\maketitle
+\begin{center}
+    \textbf{Вариант 16\\}
+\end{center}
+
+\begin{flushleft}
+\textbf{Задание №386\\}
+\end{flushleft}
+
+\begin{flushleft}
+\textsl{Исследовать, являются ли функции линейно независимыми в их области определения: $x, \ x \int_{x_0}^{1} \frac{e^t}{t^2}dt (x_0 > 0)$}
+\end{flushleft}
+
+\begin{flushleft}
+    \textbf{Решение}\\
+    \textsl{Так как система функций является линейно независимой в том случае, когда определитель Вронского для этой системы тождественно равен нулю.
+    $$\begin{vmatrix}y_1(x) & y_2(x) & y_n(x) \\ y_1'(x) & y_2'(x) & y_n'(x) \\ y_1^{(n - 1)}(x) & y_2^{(n - 1)}(x) & y_n^{(n - 1)}(x) \end{vmatrix}; \begin{vmatrix} x & x \int_{x_0}^{1} \frac{e^t}{t^2}dt\\ x' & (x \int_{x_0}^{1} \frac{e^t}{t^2}dt)'\end{vmatrix}$$
+    }\\
+    \textsl{Так как интеграл является неберущимся, функции НЕ являются линейно независимыми}\\
+    \textbf{Ответ:}
+    \text{нет}
+\end{flushleft}
+
+\begin{flushleft}
+\textbf{Задание №425}
+\end{flushleft}
+
+\begin{flushleft}
+\textsl{Составить линейные однородные дифференциальные уравнения, если заданы их системы решений $e^{x}, \ e^{2x}, \ e^{3x}$}
+\end{flushleft}
+
+\begin{flushleft}
+    \textbf{Решение}\\\\
+    \textsl{вещественные и различные, тогда ФСР имеет вид $e^{\lambda_1 x}, e^{\lambda_2 x}, ... e^{\lambda_n x}$}\\
+    \textsl{Теперь, составим характеристическое уравнение:
+    $$\lambda_1 = 1, \lambda_2 = 2, \lambda_3 = 3$$
+    $$(\lambda - \lambda_1)(\lambda - \lambda_2)(\lambda - \lambda_3)$$
+    $$\lambda^3 - 6\lambda^2 + 11\lambda - 6$$}
+    \textsl{Теперь, получим искомое линейное однородное дифференциальное уравнение:
+    $$y''' - 6y'' + 11y' - 6y = 0$$}
+    \textbf{Ответ: }
+    \textsl{$y''' - 6y'' + 11y' - 6y = 0$}
+\end{flushleft}
+
+\end{document}
