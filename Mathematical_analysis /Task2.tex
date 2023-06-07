@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[russian]{babel}
+
+\title{Матанализ ДЗ}
+\author{Васильков Дмитрий}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+
+\textbf{Задание 4076\\}
+\end{center}
+    
+\begin{flushleft}
+    \text{$\int \int \int_V xy^{2}z^{3}dxdydz$, где область V ограничена поверхностями z = xy, y = x, x = 1, z = 0}\\
+\end{flushleft}
+
+$$\int_{0}^{1}dx\int_{0}^{x}dy\int_{0}^{xy}  xy^{2}z^{3}dz $$\\
+    $$\int_{0}^{1}dx\int_{0}^{x}(\frac{x^{5}y^{6}}{4} - 0)dy$$\\
+    $$\int_{0}^{1}dx\int_{0}^{x}\frac{x^{5}y^{6}}{4}dy$$\\
+    $$\left\int_{0}^{1}dx*\frac{x^5y^7}{28}\right|_{0}^{x}$$\\
+    $$\int_{0}^{1}dx * \frac{x^{12}}{28}$$\\
+    $$\left\frac{x^{13}}{28*13}\right|_0^1$$\\
+    $$\frac{1}{364}$$
+
+      Ответ:
+   $\frac{1}{364}$\\\\
+
+
+\begin{center}
+
+\textbf{Задание 4077\\}
+\end{center}
+\begin{flushleft}
+
+    \text{$\int\int\int_V{\frac{dxdydz}{(1 + x + y + z)^3}}$, где область V ограничена поверхностями x + y + z = 1, x = 0, y = 0, z = 0\\}
+\end{flushleft}
+
+$$\int_{0}^{1}dx\int_{0}^{1 - x}dy\int_{0}^{1-x-y}\frac{dz}{(1 + x + y + z)^3}$$\\
+    $$\left\int_{0}^{1}dx\int_{0}^{1 - x}dy*(-\frac{1}{2(1 + x + y + z)^2})\right|_0^{1-x-y}$$\\
+    $$\int_{0}^{1}dx\int_{0}^{1 - x}dy*(-\frac{1}{8} + \frac{1}{2(1 + x + y)^2})$$\\
+    $$\left\int_{0}^{1}dx(-\frac{y}{8} - \frac{1}{2} * \frac{1}{1 + x + y})\right|_{0}^{1-x}$$\\
+    $$\int_{0}^{1}dx(-\frac{1-x}{8} - \frac{1}{2} * \frac{1}{1 + x + 1 - x})$$\\
+    $$\int_{0}^{1}dx(-\frac{1-x}{2} - \frac{1}{4})$$\\
+    $$-\frac{1}{2}\int_{0}^{1}(1 - x + \frac{1}{2})dx$$\\
+    $$\left-\frac{1}{2}(x - \frac{x^2}{2} + \frac{x}{2})\right|_0^1$$\\
+    $$-\frac{1}{2}(1 - \frac{1}{2} + \frac{1}{2})$$\\
+    $$-\frac{1}{2}$$\\
+
+     \textbf{Ответ:}
+    \text{$-\frac{1}{2}$}
+
+\begin{center}
+
+\textbf{Задание 4078\\}
+\end{center}
+
+\begin{flushleft}
+    \text{$\int \int \int_V xyzdxdydz$, где область V ограничена поверхностями x^2 + y^2 + z^2 = 1, x = 0, y = 0, z = 0}\\
+\end{flushleft}
+
+ $$\int_0^1dx\int_0^{1-x^2}dy\int_0^{1-x^2-y^2}xyzdz$$\\
+    $$\left\int_0^1dx\int_0^{1-x^2}dy(\frac{xyz^2}{2})\right|_0^{1-x^2-y^2}$$\\
+    $$\int_0^1dx\int_0^{1-x^2}dy*\frac{xy(1-x^2-y^2)}{2}$$\\
+    $$\int_0^1dx\int_0^{1-x^2}dy*\frac{xy-x^3y-xy^3}{2}$$\\
+    $$\left\int_0^1dx(\frac{xy^2}{4}-\frac{x^3y^2}{4}-\frac{xy^4}{8})\right|_0^{1-x^2}$$\\
+    $$\int_0^{1}dx(-\frac{x^7}{4} + \frac{3x^5}{4} - \frac{3x^3}{4} - \frac{x(1-x^2)^4}{8} + \frac{x}{4})$$\\
+    $$\left\frac{\left({1-{x}^{2}}\right)^{5}}{80}-\frac{{x}^{8}}{32}+\frac{{x}^{6}}{8}-\frac{3\,{x}^{4}
+    }{16}\\+\frac{{x}^{2}}{8}\right|_0^1$$\\
+    $$\frac{1}{32} - \frac{1}{80}$$\\
+    $$\frac{3}{160}$$\\
+
+    \textbf{Ответ:}
+    \text{$\frac{3}{160}$}
+
+\end{document}
